@@ -38,3 +38,24 @@ def get_bmi(
         - risk_level (str): Associated health risk level
     """
     return
+
+
+
+def get_tdee(
+        bmr: float, 
+        activity_level: str
+) -> float:
+    """
+    Calculate the Total Daily Energy Expenditure (TDEE) based on BMR and activity level.
+
+    Parameters:
+    - bmr (float): The Basal Metabolic Rate calculated using `calculate_bmr`.
+    - activity_level (str): The activity level of the individual. Options are:
+        'sedentary', 'lightly active', 'moderately active', 'very active', 'extra active'.
+
+    Returns:
+    - float: The calculated TDEE value in kilocalories per day.
+    """
+    pass
+
+
