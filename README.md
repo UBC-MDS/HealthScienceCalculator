@@ -10,7 +10,7 @@ $ pip install healthsciencecalculator
 
 ## Usage
 
-- TODO
+
 
 ## Contributors
 

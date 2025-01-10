@@ -21,6 +21,7 @@ In the interest of fostering an open and welcoming environment, we as contributo
 - Sharing someone’s personal details, such as their physical or email address, without their explicit consent.  
 - Exhibiting any behavior that could reasonably be regarded as unprofessional or inappropriate in a professional context.  
 
+
 ## Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
@@ -41,6 +42,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 First strike - A written slack notice that outlines the violation of the team contract.
 Second strike - Reach out to the lab instructor or TAs of the issues with the teammate.
+
 
 ## Attribution
 
