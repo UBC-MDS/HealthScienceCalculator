@@ -142,7 +142,6 @@ We welcome:
 5. Request review from maintainers
 
 ### PR Checklist
-
 - [ ] Tests added/updated and passing
 - [ ] Documentation updated
 - [ ] Code follows project style guidelines
