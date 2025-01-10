@@ -49,8 +49,18 @@ $ pip install healthsciencecalculator
 
 ## Usage
 
+
 After installation, you can start using the various functions provided by the package. 
 
+
+
+
+## Contributors
+
+Forgive Agbesi
+Hala Arar
+Jiayi Li
+Tengwei Wang
 
 ## Contributing
 
