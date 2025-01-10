@@ -38,3 +38,37 @@ def get_bmi(
         - risk_level (str): Associated health risk level
     """
     return
+
+def unit_convert(value: float, input_unit: str, ouput_unit: str):
+    """Converts values from one unit to another.
+
+    Supported measurement units:
+    - Weight: kg, g, lb, stone
+    - Length: m, cm, feet, inch
+    - Temperature: C, F, K
+    - Concentration: mg/dL, mmol/L
+    - Volume: L, mL
+
+    Parameters
+    ----------
+    value : float
+        The numeric value to be converted.
+
+    input_unit : str
+        The unit of input value.
+
+    output_unit : str
+        The desired unit of output value.
+    
+
+    Returns
+    -------
+    float
+        The output value in desired unit.
+
+    Examples
+    --------
+    >>> unit_convert(1, "m", "cm")
+    100
+    """
+    
