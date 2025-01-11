@@ -42,8 +42,8 @@ def get_bmi(
 
 
 def get_tdee(
-        bmr: float, 
-        activity_level: str
+    bmr: float, 
+    activity_level: str
 ) -> float:
     """
     Calculate the Total Daily Energy Expenditure (TDEE) based on BMR and activity level.
@@ -55,7 +55,16 @@ def get_tdee(
 
     Returns:
     - float: The calculated TDEE value in kilocalories per day.
+
+    Example:
+    --------
+    >>> bmr = 1500.0  # Basal Metabolic Rate in kilocalories
+    >>> activity_level = 'moderately active'
+    >>> tdee = get_tdee(bmr, activity_level)
+    >>> print(f"TDEE: {tdee:.2f} kcal/day")
+    TDEE: 2310.00 kcal/day  # Example output, actual value depends on implementation
     """
     pass
+
 
 
