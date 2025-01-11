@@ -51,6 +51,7 @@ $ pip install healthsciencecalculator
 
 After installation, you can start using the various functions provided by the package. 
 
+
 The **get_bmi** function calculates the Body Mass Index (BMI) and provides detailed classification information, including the BMI category and associated health risk level.
 
 ```
@@ -97,7 +98,6 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Credits
 
 `healthsciencecalculator` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
-
 
 ## Contributors
 
