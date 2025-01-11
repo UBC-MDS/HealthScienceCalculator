@@ -18,7 +18,7 @@ get_bmi
 
     Inputs: Weight and height.
 
-bmr
+get_bmr
 
     Description: Computes Basal Metabolic Rate (BMR) using the Harris-Benedict equation.
 
@@ -118,7 +118,7 @@ converted_value = unit_convert(value_in_liters, "L", "mL")
 print(f"5 liters is {converted_value:.0f} milliliters.")
 ```
 
-The **bmr** function calculates the Basal Metabolic Rate (BMR) using the Harris-Benedict equation. BMR represents the number of calories required for basic life-sustaining functions.
+The **get_bmr** function calculates the Basal Metabolic Rate (BMR) using the Harris-Benedict equation. BMR represents the number of calories required for basic life-sustaining functions.
 
 ```
 from healthsciencecalculator.healthsciencecalculator import bmr
@@ -131,7 +131,7 @@ height_male = 175.0  # Height in centimeters
 age_male = 25  # Age in years
 sex_male = "male"
 
-bmr_value_male = bmr(weight_male, height_male, age_male, sex_male)
+bmr_value_male = get_bmr(weight_male, height_male, age_male, sex_male)
 print(f"BMR for a 25-year-old male (70 kg, 175 cm): {bmr_value_male:.2f} calories/day")
 
 # Calculate BMR for a female
@@ -140,7 +140,7 @@ height_female = 165.0  # Height in centimeters
 age_female = 30  # Age in years
 sex_female = "female"
 
-bmr_value_female = bmr(weight_female, height_female, age_female, sex_female)
+bmr_value_female = get_bmr(weight_female, height_female, age_female, sex_female)
 print(f"BMR for a 30-year-old female (60 kg, 165 cm): {bmr_value_female:.2f} calories/day")
 ```
 
