@@ -42,14 +42,19 @@ If you are proposing a feature:
 
 Ready to contribute? Here's how to set up `healthsciencecalculator` for local development.
 
-1. Download a copy of `healthsciencecalculator` locally.
-2. Install `healthsciencecalculator` using `poetry`:
+1. Fork the repository
+2. Clone your fork:
+   ```bash
+   git clone https://github.com/UBC-MDS/HealthScienceCalculator.git
+   cd healthsciencecalculator
+   ```
+3. Install `healthsciencecalculator` using `poetry`:
 
     ```console
     $ poetry install
     ```
 
-3. Use `git` (or similar) to create a branch for local development and make your changes:
+4. Use `git` (or similar) to create a branch for local development and make your changes:
 
     ```console
     $ git checkout -b name-of-your-bugfix-or-feature
@@ -59,13 +64,91 @@ Ready to contribute? Here's how to set up `healthsciencecalculator` for local de
 
 5. Commit your changes and open a pull request.
 
-## Pull Request Guidelines
+### Documentation
 
-Before you submit a pull request, check that it meets these guidelines:
+We welcome:
 
-1. The pull request should include additional tests if appropriate.
-2. If the pull request adds functionality, the docs should be updated.
-3. The pull request should work for all currently supported operating systems and versions of Python.
+- Fixed typos
+- Improved explanations
+- New examples
+- Better organization
+- Translations
+
+## Style Guidelines
+
+- Code: Follow PEP 8 and project-specific conventions and NumPy-style docstrings
+- Commit messages: Follow conventional commits format
+- Documentation: Clear, concise, and complete
+- Tests: Unit tests for new features, regression tests for bugs
+
+## Development Process
+
+1. Make your changes in your feature branch
+2. Write or update tests as needed
+3. Update documentation to reflect any changes
+4. Run the test suite:
+   ```bash
+   poetry run pytest
+   poetry run pytest --cov=healthsciencecalculator
+   ```
+5. Run the linting checks:
+   ```bash
+   poetry run flake8
+   poetry run black .
+   poetry run mypy .
+   ```
+
+## Pull Request Process
+
+1. Update the README.md with details of significant changes
+2. Ensure all tests pass and code meets quality standards
+3. Update the documentation if needed. 
+
+  Example of good Numpy docstring:
+  ```python
+  def get_bmi(
+    weight: float,
+    height: float,
+) -> BMIResult:
+    """Calculate Body Mass Index (BMI) and return detailed classification information.
+
+    BMI is calculated as weight (kg) divided by height (m) squared.
+
+    Parameters
+    ----------
+    weight : float
+        Weight in kilograms
+    height : float
+        Height in meters
+
+    Returns
+    -------
+    BMIResult
+        A dataclass containing:
+        - bmi (float): The calculated BMI value
+        - category (str): BMI category, one of:
+            - 'underweight' (BMI < 18.5)
+            - 'healthy' (BMI 18.5-24.9)
+            - 'overweight' (BMI 25-29.9)
+            - 'class 1 obesity' (BMI 30-34.9)
+            - 'class 2 obesity' (BMI 35-39.9)
+            - 'class 3 obesity' (BMI >= 40)
+        - risk_level (str): Associated health risk level
+    """
+
+  ```
+
+4. Link any relevant issues in the PR description
+5. Request review from maintainers
+
+### PR Checklist
+- [ ] Tests added/updated and passing
+- [ ] Documentation updated
+- [ ] Code follows project style guidelines
+- [ ] Commits are properly formatted and descriptive
+- [ ] Changes are described in CHANGELOG.md
+
+
 
 ## Code of Conduct
 

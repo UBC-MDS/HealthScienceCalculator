@@ -45,7 +45,7 @@ def unit_convert(value: float, input_unit: str, ouput_unit: str):
     Supported measurement units:
     - Weight: kg, g, lb, stone
     - Length: m, cm, feet, inch
-    - Temperature: C, F, K
+    - Temperature: C, F
     - Concentration: mg/dL, mmol/L
     - Volume: L, mL
 
@@ -71,4 +71,19 @@ def unit_convert(value: float, input_unit: str, ouput_unit: str):
     >>> unit_convert(1, "m", "cm")
     100
     """
-    
+def get_tdee(
+        bmr: float, 
+        activity_level: str
+) -> float:
+    """
+    Calculate the Total Daily Energy Expenditure (TDEE) based on BMR and activity level.
+
+    Parameters:
+    - bmr (float): The Basal Metabolic Rate calculated using `calculate_bmr`.
+    - activity_level (str): The activity level of the individual. Options are:
+        'sedentary', 'lightly active', 'moderately active', 'very active', 'extra active'.
+
+    Returns:
+    - float: The calculated TDEE value in kilocalories per day.
+    """
+    pass

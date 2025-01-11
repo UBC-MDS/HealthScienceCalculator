@@ -6,7 +6,6 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 ## Our Standards
 
-
 ### Behaviors that contributes to creating a positive environment include:
 
 - Using kind and inclusive language.  
@@ -22,22 +21,6 @@ In the interest of fostering an open and welcoming environment, we as contributo
 - Sharing someone’s personal details, such as their physical or email address, without their explicit consent.  
 - Exhibiting any behavior that could reasonably be regarded as unprofessional or inappropriate in a professional context.  
 
-Examples of behavior that contributes to creating a positive environment include:
-
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
-
-Examples of unacceptable behavior by participants include:
-
-* The use of sexualized language or imagery and unwelcome sexual attention or advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
-
 
 ## Our Responsibilities
 
@@ -51,7 +34,6 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 
 ## Enforcement
 
-
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at <forgiveagbesi7478@gmail.com>. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
@@ -60,11 +42,6 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 First strike - A written slack notice that outlines the violation of the team contract.
 Second strike - Reach out to the lab instructor or TAs of the issues with the teammate.
-
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
 
 ## Attribution
