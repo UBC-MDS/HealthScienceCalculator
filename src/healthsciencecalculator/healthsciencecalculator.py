@@ -114,7 +114,14 @@ def get_bmr(
     >>> get_bmr(60, 165, 30, "female")
     1392.247
     """
-
+    if sex.lower() == "male":
+        bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
+    elif sex.lower() == "female":
+        bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
+    else:
+        raise ValueError("Invalid value for sex. Use 'male' or 'female'.")
+    
+    return round(bmr, 4)
 
 def get_tdee(
         bmr: float, 
