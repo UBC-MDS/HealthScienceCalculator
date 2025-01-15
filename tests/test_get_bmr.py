@@ -1,4 +1,4 @@
-import pytest
+import pytest # type: ignore
 from healthsciencecalculator.healthsciencecalculator import get_bmr
 
 
