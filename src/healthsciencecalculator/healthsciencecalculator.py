@@ -130,27 +130,54 @@ def get_bmr(
     
     return round(bmr, 4)
 
-def get_tdee(
-    bmr: float, 
-    activity_level: str
-) -> float:
+def get_tdee(bmr: float, activity_level: str) -> float:
     """
     Calculate the Total Daily Energy Expenditure (TDEE) based on BMR and activity level.
 
-    Parameters:
-    - bmr (float): The Basal Metabolic Rate calculated using `calculate_bmr`.
-    - activity_level (str): The activity level of the individual. Options are:
-        'sedentary', 'lightly active', 'moderately active', 'very active', 'extra active'.
+    Parameters
+    ----------
+    bmr : float
+        The Basal Metabolic Rate (must be positive).
+    activity_level : str
+        The activity level (allowed values: 'sedentary', 'lightly active', 
+        'moderately active', 'very active', 'extra active').
 
-    Returns:
-    - float: The calculated TDEE value in kilocalories per day.
+    Returns
+    -------
+    float
+        The calculated TDEE (kcal/day).
 
-    Example:
-    --------
-    >>> bmr = 1500.0  # Basal Metabolic Rate in kilocalories
-    >>> activity_level = 'moderately active'
-    >>> tdee = get_tdee(bmr, activity_level)
-    >>> print(f"TDEE: {tdee:.2f} kcal/day")
-    TDEE: 2310.00 kcal/day  # Example output, actual value depends on implementation
+    Raises
+    ------
+    ValueError
+        If bmr <= 0 or activity_level is not recognized.
+
+    Notes
+    -----
+    Sample multipliers (you may choose different ones if needed):
+      - sedentary: 1.2
+      - lightly active: 1.375
+      - moderately active: 1.55
+      - very active: 1.725
+      - extra active: 1.9
     """
-    pass
+    # Defensive checks
+    if bmr <= 0:
+        raise ValueError("BMR must be a positive number.")
+    
+    activity_multipliers = {
+        "sedentary": 1.2,
+        "lightly active": 1.375,
+        "moderately active": 1.55,
+        "very active": 1.725,
+        "extra active": 1.9
+    }
+
+    if activity_level not in activity_multipliers:
+        raise ValueError(
+            f"Invalid activity level. Choose one of: {list(activity_multipliers.keys())}"
+        )
+
+    # Calculate TDEE
+    tdee = bmr * activity_multipliers[activity_level]
+    return tdee
