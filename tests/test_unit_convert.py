@@ -1,5 +1,5 @@
 import pytest
-from healthsciencecalculator import healthsciencecalculator
+from healthsciencecalculator.healthsciencecalculator import unit_convert
 
 # Test case 1: wrong input type
 
