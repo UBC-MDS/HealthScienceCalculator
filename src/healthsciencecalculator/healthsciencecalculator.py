@@ -103,6 +103,10 @@ def unit_convert(value: float, input_unit: str, output_unit: str):
     if category[input_unit] != category[output_unit]:
         raise ValueError("Input unit and output unit do not in the same category")
 
+    # no need to convert
+    if input_unit == output_unit:
+        return value
+
     # convert temperature
     if input_unit == "C":
         return round(value * 1.8 + 32, 2)
