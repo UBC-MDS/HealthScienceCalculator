@@ -1,11 +1,9 @@
 from dataclasses import dataclass
 
-
 @dataclass
 class BMIResult:
     bmi: float
     category: str
-    risk_level: str
 
 
 def get_bmi(
@@ -37,7 +35,23 @@ def get_bmi(
             - 'class 3 obesity' (BMI >= 40)
         - risk_level (str): Associated health risk level
     """
-    return
+    #Rounding after calculation to ensure calculation is accurate first
+    bmi = round(weight / (height ** 2), 1)
+    
+    if bmi < 18.5:
+        category = "underweight"
+    elif bmi < 25:
+        category = "healthy"
+    elif bmi < 30:
+        category = "overweight"
+    elif bmi < 35:
+        category = "class 1 obesity"
+    elif bmi < 40:
+        category = "class 2 obesity"
+    else:
+        category = "class 3 obesity"
+    
+    return BMIResult(bmi=bmi, category=category)
 
 
 def unit_convert(value: float, input_unit: str, ouput_unit: str):
