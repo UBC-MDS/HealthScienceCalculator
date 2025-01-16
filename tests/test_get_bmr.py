@@ -4,6 +4,7 @@ from healthsciencecalculator.healthsciencecalculator import get_bmr
 
 # Test cases
 def test_bmr_male_calculation():
+    """ Test case to test the BMR calculation of a male"""
     # Normal values
     expected = 1724.052
     actual = get_bmr(70, 175, 25, "male")
@@ -26,6 +27,7 @@ def test_bmr_male_calculation():
 
 
 def test_bmr_female_calculation():
+    """ Test case to test the BMR calculation of a female"""
     # Normal values
     expected = 1383.683
     actual = get_bmr(60, 165, 30, "female")
@@ -48,6 +50,7 @@ def test_bmr_female_calculation():
 
 
 def test_bmr_case_insensitivity():
+    """ Test case to test the input for sex case sensitivity"""
     # Case insensitivity for "male"
     expected = 1724.052
     actual = get_bmr(70, 175, 25, "Male")
@@ -66,6 +69,7 @@ def test_bmr_case_insensitivity():
 
 
 def test_bmr_invalid_inputs():
+    """ Test case to test the invalid inputs"""
     # Negative weight
     with pytest.raises(ValueError):
         get_bmr(-70, 175, 25, "male")
@@ -90,6 +94,7 @@ def test_bmr_invalid_inputs():
         get_bmr(0, 175, 25, "male")
 
 def test_bmr_edge_cases():
+    """Test case for edge cases in the BMR calculation"""
     # Extremely low values
     expected = 100.881  # Male: Near-zero inputs
     actual = get_bmr(1, 1, 1, "male")
