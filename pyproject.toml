@@ -12,6 +12,7 @@ python = "^3.9"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
+pytest-cov = "^6.0.0"
 
 [tool.semantic_release]
 version_toml = [
