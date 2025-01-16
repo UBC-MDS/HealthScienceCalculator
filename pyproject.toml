@@ -9,6 +9,7 @@ packages = [{include = "healthsciencecalculator", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pytest = "^8.3.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
