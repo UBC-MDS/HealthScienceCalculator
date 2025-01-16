@@ -4,4 +4,4 @@ from healthsciencecalculator.healthsciencecalculator import get_bmi
 
 __version__ = version("healthsciencecalculator")
 
-__all__ = ['get_bmi']
+__all__ = ['get_bmi', 'get_tdee']
