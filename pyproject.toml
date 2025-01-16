@@ -5,10 +5,17 @@ description = "Calculates basic health indexes"
 authors = ["Forgive Agbesi, Jiayi Li, Hala Arar, Tengwei Wang"]
 license = "MIT"
 readme = "README.md"
+packages = [
+  { include = "healthsciencecalculator", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pytest = "^8.3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+pytest-cov = "^6.0.0"
 
 [tool.semantic_release]
 version_toml = [
