@@ -132,8 +132,8 @@ def get_bmr(
         raise ValueError("Weight must be positive")
     if height <= 0:
         raise ValueError("Height must be positive")
-    if age <= 0:
-        raise ValueError("Age must be positive")
+    if age < 0 or not isinstance(age, int):
+        raise ValueError("Age must be positive integer")
 
     if sex.lower() == "male":
         bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
@@ -143,6 +143,7 @@ def get_bmr(
         raise ValueError('Invalid value for sex. Use "male" or "female".')
     
     return round(bmr, 4)
+    
 
 def get_tdee(bmr: float, activity_level: str) -> float:
     """
