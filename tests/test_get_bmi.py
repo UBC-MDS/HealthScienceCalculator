@@ -33,11 +33,43 @@ def test_bmi_edge_cases():
 
 def test_input_validation():
     """Test error handling for invalid inputs."""
-    with pytest.raises(ZeroDivisionError):
-        get_bmi(weight=70, height=0)
-    
-    with pytest.raises(TypeError):
+    # Test invalid types
+    with pytest.raises(TypeError, match="Weight and height must be numbers"):
         get_bmi(weight="70", height=1.75)
     
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError, match="Weight and height must be numbers"):
         get_bmi(weight=70, height="1.75")
+    
+    with pytest.raises(TypeError, match="Weight and height must be numbers"):
+        get_bmi(weight=None, height=1.75)
+    
+    with pytest.raises(TypeError, match="Weight and height must be numbers"):
+        get_bmi(weight=70, height=None)
+    
+    # Test negative values
+    with pytest.raises(ValueError, match="Weight must be positive"):
+        get_bmi(weight=-70, height=1.75)
+    
+    with pytest.raises(ValueError, match="Height must be positive"):
+        get_bmi(weight=70, height=-1.75)
+    
+    # Test zero values
+    with pytest.raises(ValueError, match="Weight must be positive"):
+        get_bmi(weight=0, height=1.75)
+    
+    with pytest.raises(ValueError, match="Height must be positive"):
+        get_bmi(weight=70, height=0)
+
+def test_valid_edge_inputs():
+    """Test edge cases with valid inputs."""
+    # Test very small valid values
+    result = get_bmi(weight=0.1, height=0.1)
+    assert result.bmi > 0
+    
+    # Test very large valid values
+    result = get_bmi(weight=500, height=2.5)
+    assert result.bmi > 0
+    
+    # Test integer inputs
+    result = get_bmi(weight=70, height=2)
+    assert isinstance(result.bmi, float)
