@@ -34,7 +34,22 @@ def get_bmi(
             - 'class 2 obesity' (BMI 35-39.9)
             - 'class 3 obesity' (BMI >= 40)
         - risk_level (str): Associated health risk level
+
+    Raises
+    ------
+    ValueError
+        If weight or height is not positive
+    TypeError
+        If weight or height is not a number
     """
+    # Input validation
+    if not isinstance(weight, (int, float)) or not isinstance(height, (int, float)):
+        raise TypeError("Weight and height must be numbers")
+    if weight <= 0:
+        raise ValueError("Weight must be positive")
+    if height <= 0:
+        raise ValueError("Height must be positive")
+
     #Rounding after calculation to ensure calculation is accurate first
     bmi = round(weight / (height ** 2), 1)
     
