@@ -1,4 +1,5 @@
 # healthsciencecalculator
+[![Documentation Status](https://readthedocs.org/projects/healthsciencecalculator/badge/?version=latest)](https://healthsciencecalculator.readthedocs.io/en/latest/?badge=latest)
 
 ## Summary 
 
