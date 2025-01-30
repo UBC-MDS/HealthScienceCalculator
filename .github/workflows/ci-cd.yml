@@ -43,8 +43,8 @@ jobs:
     # Only run this job if the "ci" job passes
     needs: ci
 
-    # Only run this job if new work is pushed to "main"
-    if: github.ref == 'refs/heads/main'
+    # Allow main and ci-cd-integration branches to trigger the release
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/ci-cd-integration'
 
     # Set up operating system
     runs-on: ubuntu-latest
