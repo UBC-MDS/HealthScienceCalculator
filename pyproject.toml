@@ -29,6 +29,9 @@ version_toml = [
 ]
 changelog_file = "CHANGELOG.md"
 build_command = "pip install poetry && poetry build"
+major_on_zero = false
+prerelease = true
+prerelease_tag = "rc"
 
 [tool.semantic_release.branches.main]
 match = "main"
@@ -37,6 +40,7 @@ prerelease = false
 [tool.semantic_release.branches.ci-cd-integration]
 match = "ci-cd-integration"
 prerelease = true
+prerelease_tag = "rc"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
