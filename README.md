@@ -14,6 +14,21 @@
 
 This package healthsciencecalculator.py is designed to provide tools for calculating and analyzing important health metrics. It aims to support health professionals, researchers, and fitness enthusiasts by offering reliable functions to convert relevant units, compute Total Daily Energy Expenditure (TDEE), Basal Metabolic Rate (BMR), and Body Mass Index (BMI).
 
+
+## Python Ecosystem Fit
+
+The healthsciencecalculator.py package fits well within the broader Python ecosystem, complementing existing data science and health analysis libraries. There are several Python packages with similar functionalities, such as: 
+
+[health-indicator](https://pypi.org/project/health-indicator/)
+    
+This package collects health indices like BMI and health indicators like birth rate
+
+[health-records 0.0.7](https://pypi.org/project/health-records/)
+
+This package maintains personal health records in a text file that can be privately stored in your computer.
+
+The healthsciencecalculator.py package is unique in that it performs health-related calculations with high accuracy and precision, tailored specifically for healthcare professionals and data analysts.
+
 ## Functions 
 
 **get_tdee**
@@ -40,20 +55,6 @@ Description: convert between various health-related units such as weight (kg to 
 
 Inputs: numeric value to be converted, unit of input value, the desired unit
 
-
-## Python Ecosystem Fit
-
-The healthsciencecalculator.py package fits well within the broader Python ecosystem, complementing existing data science and health analysis libraries. There are several Python packages with similar functionalities, such as: 
-
-[health-indicator](https://pypi.org/project/health-indicator/)
-    
-This package collects health indices like BMI and health indicators like birth rate
-
-[health-records 0.0.7](https://pypi.org/project/health-records/)
-
-This package maintains personal health records in a text file that can be privately stored in your computer.
-
-The healthsciencecalculator.py package is unique in that it performs health-related calculations with high accuracy and precision, tailored specifically for healthcare professionals and data analysts.
 
 ## Installation
 
