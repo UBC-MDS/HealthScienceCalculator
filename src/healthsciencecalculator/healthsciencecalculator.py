@@ -33,7 +33,6 @@ def get_bmi(
             - 'class 1 obesity' (BMI 30-34.9)
             - 'class 2 obesity' (BMI 35-39.9)
             - 'class 3 obesity' (BMI >= 40)
-        - risk_level (str): Associated health risk level
 
     Example
     ------
