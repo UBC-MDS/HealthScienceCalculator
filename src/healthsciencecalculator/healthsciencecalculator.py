@@ -35,6 +35,11 @@ def get_bmi(
             - 'class 3 obesity' (BMI >= 40)
         - risk_level (str): Associated health risk level
 
+    Example
+    ------
+    >>> get_bmi(weight=70.0, height=1.75)
+    BMIResult(bmi=22.9, category='healthy')
+
     Raises
     ------
     ValueError
@@ -221,6 +226,11 @@ def get_tdee(bmr: float, activity_level: str) -> float:
     -------
     float
         The calculated TDEE (kcal/day).
+
+    Example 
+    -------- 
+    >>> get_tdee(bmr = 1500.0, activity_level = 'sedentary')
+    1800.0
 
     Raises
     ------
