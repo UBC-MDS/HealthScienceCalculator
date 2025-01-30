@@ -1,6 +1,7 @@
 # healthsciencecalculator
 [![Documentation Status](https://readthedocs.org/projects/healthsciencecalculator/badge/?version=latest)](https://healthsciencecalculator.readthedocs.io/en/latest/?badge=latest)
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://github.com/UBC-MDS/HealthScienceCalculator)
+
 
 This package healthsciencecalculator.py is designed to provide tools for calculating and analyzing important health metrics. It aims to support health professionals, researchers, and fitness enthusiasts by offering reliable functions to convert relevant units, compute Total Daily Energy Expenditure (TDEE), Basal Metabolic Rate (BMR), and Body Mass Index (BMI).
 
