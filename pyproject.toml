@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "healthsciencecalculator"
-version = "1.1.1-rc.1"
+version = "1.1.1-rc.2"
 description = "Calculates basic health indexes"
 authors = ["Forgive Agbesi, Jiayi Li, Hala Arar, Tengwei Wang"]
 license = "MIT"
