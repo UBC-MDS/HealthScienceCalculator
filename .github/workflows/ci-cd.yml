@@ -43,8 +43,8 @@ jobs:
     # Only run this job if the "ci" job passes
     needs: ci
 
-    # Only run this job if new work is pushed to "main"
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Allow main and ci-cd-integration branches to trigger the release
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/ci-cd-integration'
 
     # Set up operating system
     runs-on: ubuntu-latest
@@ -63,24 +63,26 @@ jobs:
 
       - name: Use Python Semantic Release to prepare release
         id: release
-        uses: python-semantic-release/python-semantic-release@v8.3.0
+        uses: python-semantic-release/python-semantic-release@v8.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_prerelease: ${{ github.ref == 'refs/heads/ci-cd-integration' }}
 
       - name: Publish to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        if: steps.release.outputs.released == 'true'
+        if: ${{ steps.release.outputs.released == 'true' }}
         with:
           repository-url: https://test.pypi.org/legacy/
           password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          verbose: true
 
       - name: Test install from TestPyPI
-        if: steps.release.outputs.released == 'true'
+        if: ${{ steps.release.outputs.released == 'true' }}
         run: |
             pip install \
             --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
-            healthsciencecalculator
+            healthsciencecalculator==${{ steps.release.outputs.version }}
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
