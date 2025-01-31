@@ -1,5 +1,7 @@
 import pytest
-from healthsciencecalculator.healthsciencecalculator import get_bmi
+# import sys
+# sys.path.append("../src/healthsciencecalculator")
+from healthsciencecalculator.get_bmi import get_bmi
 import math
 
 def test_bmi_categories():

@@ -1,5 +1,5 @@
 import pytest
-from healthsciencecalculator.healthsciencecalculator import get_tdee
+from healthsciencecalculator.get_tdee import get_tdee
 
 def test_get_tdee_sedentary():
     """
