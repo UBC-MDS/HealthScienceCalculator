@@ -1,7 +1,7 @@
 # healthsciencecalculator
 
 [![Documentation Status](https://readthedocs.org/projects/healthsciencecalculator/badge/?version=latest)](https://healthsciencecalculator.readthedocs.io/en/latest/?badge=latest)
-[![CI/CD Workflow](https://github.com/UBC-MDS/HealthScienceCalculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/HealthScienceCalculator/actions)
+[![CI/CD Workflow](https://github.com/UBC-MDS/HealthScienceCalculator/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/UBC-MDS/HealthScienceCalculator/actions)
 [![codecov](https://codecov.io/gh/UBC-MDS/HealthScienceCalculator/branch/main/graph/badge.svg?token=lnZ6RUI3yh)](https://codecov.io/gh/UBC-MDS/HealthScienceCalculator)
 [![PyPI version](https://img.shields.io/pypi/v/healthsciencecalculator.svg)](https://pypi.org/project/healthsciencecalculator/)
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/)
