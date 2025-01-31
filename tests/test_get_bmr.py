@@ -1,5 +1,5 @@
 import pytest # type: ignore
-from healthsciencecalculator.healthsciencecalculator import get_bmr
+from healthsciencecalculator.get_bmr import get_bmr
 
 
 # Test cases
