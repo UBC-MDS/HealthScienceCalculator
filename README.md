@@ -30,25 +30,25 @@ The healthsciencecalculator.py package is unique in that it performs health-rela
 
 ## Functions 
 
-**get_tdee**
+**`get_tdee`**
 
 Description: Calculates Total Daily Energy Expenditure (TDEE) based on BMR and activity level.
 
 Inputs: BMR and activity level.
 
-**get_bmi**
+**`get_bmi`**
 
 Description: Calculates Body Mass Index (BMI) and provides category classification.
 
 Inputs: Weight and height.
 
-**get_bmr**
+**`get_bmr`**
 
 Description: Computes Basal Metabolic Rate (BMR) using the Harris-Benedict equation.
 
 Inputs: Weight, height, age, and sex.
 
-**unit_convert**
+**`unit_convert`**
 
 Description: convert between various health-related units such as weight (kg to lbs), temperature (Celsius to Fahrenheit), and length (cm to inches). This function simplifies converting clinical data for international research or patient records.
 
