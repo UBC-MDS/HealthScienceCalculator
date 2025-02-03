@@ -155,6 +155,65 @@ bmr_value_female = get_bmr(weight_female, height_female, age_female, sex_female)
 print(f"BMR for a 30-year-old female (60 kg, 165 cm): {bmr_value_female:.2f} calories/day")
 ```
 
+## Running the Test Suite
+
+### Prerequisites
+
+Before running the tests, make sure you have the following installed:
+
+Python 3.x – You can check if you have Python installed by running:
+```bash
+python --version
+```
+
+pytest – The test suite uses the pytest testing framework. You can install pytest using pip:
+```bash
+pip install pytest
+
+```
+
+(Optional) pytest-cov – To check test coverage, you can install the pytest-cov plugin:
+```bash
+pip install pytest-cov
+```
+
+### Running the Tests
+
+Once the prerequisites are installed, navigate to the root directory of the project (where pytest is located, and run the following command in your terminal:
+
+```bash
+pytest
+```
+
+This will automatically discover and run all tests in files starting with test_ and containing functions starting with test_.
+
+### Runnin Specific Tests
+
+To run a specific test file, use:
+
+```bash
+pytest path/to/test_file.py
+```
+
+To run a specific test function within a file, use:
+```bash
+pytest path/to/test_file.py::test_function_name
+```
+
+### Viewing Test Results
+
+pytest will show the test results in your terminal, indicating which tests passed and which failed. If a test fails, pytest will display an error message to help with debugging.
+
+### Checking Test Coverage (Optional)
+
+If you have pytest-cov installed, you can check the test coverage with the following command:
+
+```bash
+pytest --cov=healthsciencecalculator
+```
+
+This will show you how much of your code is covered by tests and highlight areas that need more coverage.
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
