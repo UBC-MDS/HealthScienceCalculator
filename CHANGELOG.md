@@ -2,6 +2,21 @@
 
 
 
+## v0.0.3 (2025-02-03)
+
+### Fix
+
+* fix: unrestrict python further versions (#107)
+
+* fix: unrestrict python further versions
+
+* change readme formatting
+
+---------
+
+Co-authored-by: Li, Jiayi &lt;76764434+jiayili7@users.noreply.github.com&gt; ([`c96ea0c`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/c96ea0cc8bb26efc3bfa4dfffc332c892f212155))
+
+
 ## v0.0.2 (2025-02-03)
 
 ### Fix

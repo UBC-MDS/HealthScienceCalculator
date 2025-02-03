@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "healthsciencecalculator"
-version = "0.0.2"
+version = "0.0.3"
 description = "Calculates basic health indexes"
 authors = [
     "Forgive Agbesi <forgiveagbesi7478@gmail.com>", 
