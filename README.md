@@ -1,4 +1,4 @@
-# healthsciencecalculator
+# Health Science Calculator
 
 [![Documentation Status](https://readthedocs.org/projects/healthsciencecalculator/badge/?version=latest)](https://healthsciencecalculator.readthedocs.io/en/latest/?badge=latest)
 [![CI/CD Workflow](https://github.com/UBC-MDS/HealthScienceCalculator/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/UBC-MDS/HealthScienceCalculator/actions)
@@ -7,7 +7,6 @@
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/github/license/UBC-MDS/HealthScienceCalculator.svg)](LICENSE)
 [![semantic-release](https://img.shields.io/badge/semantic--release-✓-brightgreen.svg)](https://python-semantic-release.readthedocs.io/en/latest/)
-
 
 
 ## Summary 
