@@ -2,7 +2,12 @@
 name = "healthsciencecalculator"
 version = "0.0.1"
 description = "Calculates basic health indexes"
-authors = ["Forgive Agbesi, Jiayi Li, Hala Arar, Tengwei Wang"]
+authors = [
+    "Forgive Agbesi <forgiveagbesi7478@gmail.com>", 
+    "Jiayi Li <jiayi7@student.ubc.ca>", 
+    "Hala Arar <halaosama92@yahoo.com>", 
+    "Tengwei Wang <tew49@student.ubc.ca>"
+]
 license = "MIT"
 readme = "README.md"
 packages = [
