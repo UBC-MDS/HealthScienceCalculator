@@ -10,9 +10,6 @@ authors = [
 ]
 license = "MIT"
 readme = "README.md"
-packages = [
-  { include = "healthsciencecalculator", from = "src" }
-]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4"#amend python versions, with 3.11 as the minimum version
@@ -26,28 +23,15 @@ jupyter = "^1.1.1"
 myst-nb = {version = "^1.1.2", python = "^3.11"}
 sphinx-autoapi = "^3.4.0"
 sphinx-rtd-theme = "^3.0.2"
-python-semantic-release = "^9.17.0"
+
 
 [tool.semantic_release]
-version_variables = ["pyproject.toml:version"]
-version_toml = ["pyproject.toml:tool.poetry.version"]
-changelog_file = "CHANGELOG.md"
-build_command = "pip install poetry && poetry build"
-major_on_zero = false
-prerelease = true
-prerelease_tag = "rc"
-branch = "main"
-starting_version = "1.1.4"
-
-[tool.semantic_release.branches.main]
-match = "main"
-prerelease = false
-
-[tool.semantic_release.branches.ci-cd-integration]
-match = "ci-cd-integration"
-prerelease = true
-prerelease_tag = "rc"
-
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
