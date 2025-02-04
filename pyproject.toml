@@ -37,7 +37,7 @@ major_on_zero = false
 prerelease = true
 prerelease_tag = "rc"
 branch = "main"
-starting_version = "0.2.0"
+starting_version = "1.1.4"
 
 [tool.semantic_release.branches.main]
 match = "main"
