@@ -2,6 +2,33 @@
 
 
 
+## v0.2.0 (2025-02-04)
+
+### Breaking
+
+* feat!: major version upgrade (#111)
+
+Co-authored-by: Li, Jiayi &lt;76764434+jiayili7@users.noreply.github.com&gt; ([`404dc99`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/404dc996dbcc8f53cf504ed4e3a9486f3a10290f))
+
+* feat!: retry milestone 4 release ([`abf7f44`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/abf7f44c268c744021b71881cbd9538d41b78108))
+
+* feat!: allow major version update (#110)
+
+Co-authored-by: Li, Jiayi &lt;76764434+jiayili7@users.noreply.github.com&gt; ([`3efdbb0`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/3efdbb03ea526b183d0f5d3c679e4bc613e74532))
+
+### Fix
+
+* fix: manually update starting version (#112)
+
+* feat!: major version upgrade
+
+* fix: update starting version
+
+---------
+
+Co-authored-by: Li, Jiayi &lt;76764434+jiayili7@users.noreply.github.com&gt; ([`f0d63c9`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/f0d63c9604bd0993a20e4aa9f5849bdd55cd9db7))
+
+
 ## v0.1.0 (2025-02-04)
 
 ### Breaking
