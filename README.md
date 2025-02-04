@@ -168,7 +168,6 @@ python --version
 pytest – The test suite uses the pytest testing framework. You can install pytest using pip:
 ```bash
 pip install pytest
-
 ```
 
 (Optional) pytest-cov – To check test coverage, you can install the pytest-cov plugin:
