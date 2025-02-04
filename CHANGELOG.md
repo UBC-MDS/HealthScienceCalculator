@@ -2,6 +2,13 @@
 
 
 
+## v0.0.4 (2025-02-04)
+
+### Fix
+
+* fix: add license justification in README.md (#108) ([`85f1c84`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/85f1c844977f012144646bc063be9bf42a2532a5))
+
+
 ## v0.0.3 (2025-02-03)
 
 ### Fix
