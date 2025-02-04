@@ -34,7 +34,7 @@ version_toml = [
 ]
 changelog_file = "CHANGELOG.md"
 build_command = "pip install poetry && poetry build"
-major_on_zero = false
+major_on_zero = true
 prerelease = true
 prerelease_tag = "rc"
 
