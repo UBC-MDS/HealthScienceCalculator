@@ -235,7 +235,7 @@ The healthsciencecalculator.py package is released under the MIT license to prom
 
 ## Contributors
 
-Forgive Agbesi
-Hala Arar
-Jiayi Li
+Forgive Agbesi,
+Hala Arar,
+Jiayi Li,
 Tengwei Wang
