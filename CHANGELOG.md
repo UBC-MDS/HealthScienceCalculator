@@ -1,6 +1,16 @@
 # CHANGELOG
 
 
+## v0.2.3 (2025-02-04)
+
+### Bug Fixes
+
+- Update pyproject.toml
+  ([`aa41c0d`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/aa41c0dd4cb77872b5f6602ec64479a0ace62983))
+
+fix: Update pyproject.toml version updated
+
+
 ## v0.2.2 (2025-02-04)
 
 ### Bug Fixes
