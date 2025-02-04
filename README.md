@@ -177,7 +177,7 @@ pip install pytest-cov
 
 ### Running the Tests
 
-Once the prerequisites are installed, navigate to the root directory of the project (where pytest is located, and run the following command in your terminal:
+Once the prerequisites are installed, navigate to the root directory of the project (where pytest is located), and run the following command in your terminal:
 
 ```bash
 pytest
