@@ -221,6 +221,15 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 `healthsciencecalculator` was created by Forgive Agbesi, Jiayi Li, Hala Arar, Tengwei Wang. It is licensed under the terms of the MIT license.
 
+### Why MIT License?
+
+The healthsciencecalculator.py package is released under the MIT license to promote widespread adoption and improvement of standardized health metric calculations in the medical and research communities. This choice reflects our commitment to:
+
+- Scientific transparency: By using the MIT license, we ensure that the algorithms and methodologies behind the health metric calculations are openly accessible. This allows researchers to replicate the calculations, fostering trust and credibility in the results.
+- Healthcare integration: The open license allows healthcare providers and organizations to adapt the package to their systems, improving patient care and decision-making through easy customization and integration.
+- Educational use: The MIT license makes the package freely available for use in educational settings, supporting learning and innovation in healthcare, data science, and research.
+- Quality improvement: By allowing unrestricted modification and redistribution, the research community can collectively improve these this tool and features they want to use. 
+
 ## Credits
 
 `healthsciencecalculator` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
