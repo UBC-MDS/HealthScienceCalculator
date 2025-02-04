@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.2.4 (2025-02-04)
+
+### Bug Fixes
+
+- Update pyproject.toml
+  ([`468ec98`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/468ec982d907bbf4d2f7268c385cc1e7a74350bb))
+
+fix: Update pyproject.toml. change log updated
+
+- Updated the portry lock file ([#116](https://github.com/UBC-MDS/HealthScienceCalculator/pull/116),
+  [`eff5dd2`](https://github.com/UBC-MDS/HealthScienceCalculator/commit/eff5dd2201ff0aaafbf8d2450c12c1e5d29a7cb7))
+
+
 ## v0.2.3 (2025-02-04)
 
 ### Bug Fixes
